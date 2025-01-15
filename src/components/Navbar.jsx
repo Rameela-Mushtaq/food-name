@@ -49,10 +49,10 @@ const Navbar = () => {
 
       {/*Mobile nav */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-20"
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-40"
           onClick={closeMenu}
         >
-          <div className="fixed flex flex-col justify-between items-center h-screen w-[60%] bg-cardBg overflow-auto p-5 z-30transition-transform transform"
+          <div className="fixed flex flex-col justify-between items-center min-h-screen w-[60%] bg-cardBg overflow-auto p-5 z-30transition-transform transform"
             style={{
               transform: isOpen ? "translateX(0)" : "translateX(-100%)",
               transition: "transform 0.3s ease-in-out",

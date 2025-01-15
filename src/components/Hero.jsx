@@ -11,7 +11,7 @@ const Hero = () => {
         
         {/* left side */}
         <div className='md:w-[60%] flex flex-col md:gap-10 gap-6'>
-          <div className='flex flex-col md:gap-6 gap-4 text-left'>
+          <div className='flex flex-col md:gap-6 gap-4 text-center md:text-left'>
           <div className='lg:text-5xl md:text-4xl text-3xl font-semibold'>
            <span className='text-secondary'>Fresh Groceries </span>Delivered 
            <div>Right to Your Doorstep!</div>
