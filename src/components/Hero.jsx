@@ -4,7 +4,7 @@ import hero from "../assets/images/hero.png"
 
 const Hero = () => {
   return (
-    <div  className='bg-hero-gradient'>
+    <div id='home'  className='bg-hero-gradient'>
       <Navbar />
       <div className='py-8 flex justify-center'>
       <div className='w-[90%] max-w-[1800px] font-poppins flex flex-col gap-4 md:flex-row items-center'>

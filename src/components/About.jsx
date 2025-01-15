@@ -9,9 +9,9 @@ const About = () => {
       <div className=' w-[90%] max-w-[1800px] font-poppins flex lg:flex-row flex-col-reverse gap-4 items-center'>
 
         {/* right side */}
-        <div className='lg:w-1/2 w-full '>
+        <div className='lg:w-1/2  w-full lg:flex hidden'>
           <img src={about} alt="about" className="w-full h-full"/>
-          <div className='absolute left-0 top-[160px] lg:flex hidden'>
+          <div className='absolute left-0 top-[160px] '>
             <img src={dots} alt="dots" />
           </div>
         </div>
