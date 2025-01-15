@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
-import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
@@ -30,7 +29,7 @@ const Navbar = () => {
             </button>
           </div>
 
-           {/* nav items */}
+          {/* nav items */}
           <div className="hidden text-lg font-medium lg:flex items-center gap-20">
             <a href="/">Home</a>
             <a href="#product">Products</a>
@@ -52,7 +51,7 @@ const Navbar = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 z-40"
           onClick={closeMenu}
         >
-          <div className="fixed flex flex-col justify-between items-center min-h-screen w-[60%] bg-cardBg overflow-auto p-5 z-30transition-transform transform"
+          <div className="fixed flex flex-col justify-between items-center h-screen w-[60%] bg-cardBg overflow-hidden p-5 z-50 transition-transform transform"
             style={{
               transform: isOpen ? "translateX(0)" : "translateX(-100%)",
               transition: "transform 0.3s ease-in-out",
@@ -61,16 +60,16 @@ const Navbar = () => {
             <div className="flex flex-col gap-6">
               <img src={logo} alt="logo" />
               <div className="flex flex-col gap-3 font-medium text-lg text-center">
-                <Link to="/">Home</Link>
-                <Link to="products">Products</Link>
-                <Link to="work">How It Works</Link>
-                <Link to="about">About Us</Link>
+                <a href="/">Home</a>
+                <a href="#product">Products</a>
+                <a href="#work">How It Works</a>
+                <a href="#about">About Us</a>
               </div>
-              </div>
+            </div>
 
-                <button className="whitespace-nowrap py-3 px-7 text-lg bg-btnBg text-white rounded-md">
-                  Contact Us
-                </button>
+            <button className="whitespace-nowrap py-3 px-7 text-lg bg-btnBg text-white rounded-md">
+              Contact Us
+            </button>
           </div>
 
         </div>
