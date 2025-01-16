@@ -61,7 +61,7 @@ const Navbar = () => {
             {/* Navigation Links */}
             <div className="flex flex-col gap-6">
               <div className="flex justify-center">
-              <img src={logo} alt="logo" className="w-[50%]"/>
+              <img src={logo} alt="logo" className="w-[30%]"/>
               </div>
               <div className="flex flex-col gap-3 font-medium text-lg text-center">
                 <a href="#home" onClick={closeMenu}>

@@ -10,7 +10,7 @@ const Shop = () => {
 
         {/* left side */}
         <div className='lg:w-1/2 flex flex-col md:gap-12 gap-6 py-8 md:py-20'>
-          <div className='flex flex-col gap-4'>
+          <div className='flex flex-col gap-3'>
             <div className='md:text-4xl text-2xl text-secondary font-semibold'>Shop on the Go  </div>
             <div className='lg:text-5xl md:text-4xl text-3xl font-semibold'>Download The Veggies App</div>
             <div className='md:text-2xl text-sm font-normal text-subHeading'>

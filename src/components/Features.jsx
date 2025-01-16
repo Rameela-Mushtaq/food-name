@@ -11,7 +11,7 @@ const Features = () => {
         <div className='md:w-1/2 flex flex-col gap-6'>
         <div className='flex flex-col gap-3'>
             <div className='md:text-4xl text-2xl text-secondary font-semibold'>Features:</div>
-            <div className='lg:text-5xl md:text-4xl text-3xl font-semibold lg:w-[80%]'>Why Choose FreshEase?</div>
+            <div className='lg:text-5xl md:text-4xl text-3xl font-semibold xl:w-[80%]'>Why Choose FreshEase?</div>
           </div>
 
           <div className='grid md:grid-cols-2 grid-cols-1 gap-x-4 gap-y-4'>

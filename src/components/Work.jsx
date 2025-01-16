@@ -15,7 +15,7 @@ const Work = () => {
             <div className='lg:flex hidden absolute bottom-1/2 translate-y-1/2 z-10'>
               <img src={line} alt="line" />
             </div>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-24 gap-10'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-24 md:gap-12  gap-8'>
               {Working.map((work, index) => (
                 <div key={index} className='bg-white z-30  rounded-3xl flex flex-col md:px-10 px-6 md:pt-10 pt-6 pb-4 gap-5'>
                   <div className='flex justify-center '>

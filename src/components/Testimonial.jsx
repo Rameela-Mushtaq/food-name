@@ -51,7 +51,7 @@ const Testimonial = () => {
       <div className='w-[90%] max-w-[1800px] font-poppins'>
         <div className='flex flex-col gap-3 justify-start relative'>
           <div className='md:text-4xl text-2xl text-secondary font-semibold'>Testimonials  </div>
-          <div className='lg:text-5xl md:text-4xl text-3xl font-semibold lg:w-[40%]'>What Our Customer Says</div>
+          <div className='lg:text-5xl md:text-4xl text-3xl font-semibold xl:w-[40%]'>What Our Customer Says</div>
 
           <div className="absolute right-0 md:flex hidden gap-3">
             <button
