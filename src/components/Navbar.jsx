@@ -47,7 +47,7 @@ const Navbar = () => {
       {/* Mobile Nav */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="fixed flex lg:hidden inset-0 bg-black bg-opacity-50 z-40"
           onClick={closeMenu}
         >
           <div
@@ -60,7 +60,9 @@ const Navbar = () => {
           >
             {/* Navigation Links */}
             <div className="flex flex-col gap-6">
-              <img src={logo} alt="logo" />
+              <div className="flex justify-center">
+              <img src={logo} alt="logo" className="w-[50%]"/>
+              </div>
               <div className="flex flex-col gap-3 font-medium text-lg text-center">
                 <a href="#home" onClick={closeMenu}>
                   Home
@@ -78,8 +80,8 @@ const Navbar = () => {
             </div>
 
             {/* Contact Us Button */}
-            <div className="mt-auto">
-              <button className="whitespace-nowrap py-3 px-7 text-lg bg-btnBg text-white rounded-md w-full">
+            <div className="mt-auto flex justify-center">
+              <button className="whitespace-nowrap py-3 px-7 text-lg bg-btnBg text-white rounded-md w-fit">
                 Contact Us
               </button>
             </div>
