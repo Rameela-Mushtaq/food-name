@@ -51,7 +51,7 @@ const Navbar = () => {
           onClick={closeMenu}
         >
           <div
-            className="fixed flex flex-col justify-between items-center h-screen w-[60%] bg-cardBg p-5 z-50 transition-transform transform"
+            className="fixed flex flex-col justify-between items-center h-full overflow-auto w-[60%] bg-cardBg p-5 z-50 transition-transform transform"
             style={{
               transform: isOpen ? "translateX(0)" : "translateX(-100%)",
               transition: "transform 0.3s ease-in-out",
@@ -59,7 +59,7 @@ const Navbar = () => {
             onClick={(e) => e.stopPropagation()}
           >
             {/* Navigation Links */}
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 h-full">
               <img src={logo} alt="logo" />
               <div className="flex flex-col gap-3 font-medium text-lg text-center">
                 <a href="#home" onClick={closeMenu}>
@@ -78,9 +78,11 @@ const Navbar = () => {
             </div>
 
             {/* Contact Us Button */}
-            <button className="whitespace-nowrap py-3 px-7 text-lg bg-btnBg text-white rounded-md">
+           <div>
+           <button className="whitespace-nowrap py-3 px-7 text-lg bg-btnBg text-white rounded-md">
               Contact Us
             </button>
+           </div>
           </div>
         </div>
       )}
