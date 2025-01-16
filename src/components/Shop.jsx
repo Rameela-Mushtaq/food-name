@@ -20,23 +20,23 @@ const Shop = () => {
 
           <div className='flex flex-col gap-4 md:gap-6'>
             <div className='md:text-3xl text-2xl font-normal text-shopText'>Download App Form</div>
-            <div className='flex flex-wrap md:gap-10 gap-3 pb-4'>
-              <button className='bg-btn2Bg rounded-xl py-4 px-7 whitespace-nowrap'>
+            <div className='flex md:gap-10 gap-3 pb-4'>
+              <button className='bg-btn2Bg rounded-xl md:py-4 py-3 md:px-7 px-3 whitespace-nowrap'>
                 <div className='flex flex-row gap-3'>
-                  <img src={playStore} alt="store" className='object-contain' />
+                  <img src={playStore} alt="store" className='object-contain md:w-full w-[20%]' />
                   <div className='flex flex-col text-white text-start'>
                     <div className='text-xs'>Get it on</div>
-                    <div className='text-xl'>Google Play</div>
+                    <div className='md:text-xl text-base'>Google Play</div>
                   </div>
                 </div>
               </button>
 
-              <button className='bg-btn2Bg rounded-xl py-4 px-7  whitespace-nowrap'>
-                <div className='flex flex-row gap-4 overflow-hidden'>
-                  <img src={apple} alt="store" className='object-contain' />
+              <button className='bg-btn2Bg rounded-xl md:py-4 py-3 md:px-7 px-3  whitespace-nowrap'>
+                <div className='flex flex-row md:gap-4 gap-2 overflow-hidden'>
+                  <img src={apple} alt="store" className='object-contain md:w-full w-[20%]' />
                   <div className='flex flex-col text-white text-start'>
                     <div className='text-xs'>Download on the</div>
-                    <div className='text-xl'>Apple Store</div>
+                    <div className='md:text-xl text-base'>Apple Store</div>
                   </div>
                 </div>
               </button>
