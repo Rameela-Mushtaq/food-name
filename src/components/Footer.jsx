@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='flex justify-center'>
           <img src={logo} alt="" className='' />
         </div>
-        <div className="flex md:flex-row flex-col text-center lg:gap-16 md:gap-10 gap-5 font-medium text-lg text-white justify-center">
+        <div className="flex flex-wrap px-2 text-center lg:gap-16 md:gap-10 gap-5 font-medium text-lg text-white justify-center">
           <a href="#home">Home</a>
           <a href="#product">Products</a>
           <a href="#work">How It Works</a>

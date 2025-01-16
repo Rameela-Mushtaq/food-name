@@ -7,10 +7,14 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+
+    document.body.classList.toggle("no-scroll", !isOpen);
   };
 
   const closeMenu = () => {
     setIsOpen(false);
+
+    document.body.classList.remove("no-scroll");
   };
 
 
@@ -31,7 +35,7 @@ const Navbar = () => {
 
           {/* nav items */}
           <div className="hidden text-lg font-medium lg:flex items-center gap-20">
-            <a href="/">Home</a>
+            <a href="#home">Home</a>
             <a href="#product">Products</a>
             <a href="#work">How It Works</a>
             <a href="#about">About Us</a>
@@ -48,7 +52,7 @@ const Navbar = () => {
 
       {/*Mobile nav */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-40"
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-40 overflow-hidden"
           onClick={closeMenu}
         >
           <div className="fixed flex flex-col justify-between items-center h-screen w-[60%] bg-cardBg overflow-hidden p-5 z-50 transition-transform transform"
@@ -60,10 +64,10 @@ const Navbar = () => {
             <div className="flex flex-col gap-6">
               <img src={logo} alt="logo" />
               <div className="flex flex-col gap-3 font-medium text-lg text-center">
-                <a href="/">Home</a>
-                <a href="#product">Products</a>
-                <a href="#work">How It Works</a>
-                <a href="#about">About Us</a>
+                <a href="#home" onClick={closeMenu}>Home</a>
+                <a href="#product" onClick={closeMenu}>Products</a>
+                <a href="#work" onClick={closeMenu}>How It Works</a>
+                <a href="#about" onClick={closeMenu}>About Us</a>
               </div>
             </div>
 
